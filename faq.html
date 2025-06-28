@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>שאלות נפוצות - Skillify</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .faq {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .question {
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .answer {
+      display: none;
+      padding: 10px 15px;
+      background-color: #e8f0fe;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">שאלות נפוצות</h1>
+
+<div class="faq">
+  <div class="question" onclick="toggleAnswer(0)">איך נרשמים לקורסים?</div>
+  <div class="answer">יש ללחוץ על כפתור ההרשמה ולמלא את הפרטים בטופס.</div>
+
+  <div class="question" onclick="toggleAnswer(1)">האם צריך לשלם?</div>
+  <div class="answer">מרבית הקורסים חינמיים, אך חלקם בתשלום סמלי.</div>
+
+  <div class="question" onclick="toggleAnswer(2)">איך מקבלים תעודה?</div>
+  <div class="answer">לאחר סיום כל השיעורים תוכל להוריד תעודה דיגיטלית.</div>
+</div>
+
+<script>
+  function toggleAnswer(index) {
+    const answers = document.querySelectorAll('.answer');
+    const answer = answers[index];
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>

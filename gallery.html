@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>גלריה - Skillify</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      background: #f9f9f9;
+      margin: 0;
+    }
+
+    header {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>גלריה של משתתפים</h1>
+</header>
+
+<section class="gallery">
+  <img src="https://picsum.photos/id/1011/250/180" alt="דוגמה 1">
+  <img src="https://picsum.photos/id/1025/250/180" alt="דוגמה 2">
+  <img src="https://picsum.photos/id/1003/250/180" alt="דוגמה 3">
+  <img src="https://picsum.photos/id/1050/250/180" alt="דוגמה 4">
+</section>
+
+<footer>
+  &copy; 2025 Skillify
+</footer>
+
+</body>
+</html>
